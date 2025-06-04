@@ -2,7 +2,7 @@
 let scannedQRs = [];
     let notScannedQRs = [];
     let originalHeaders = [];
-    const displayHeaders = ['Dhalao Name', 'qrcodeid', 'Ward', 'Zone', 'Location', 'Type', 'Scanned Status'];
+    const displayHeaders = ['Dhalao Name', 'qrcodeid', 'Ward', 'Zone', 'Location', 'Scanned Status'];
 
 // Function to parse CSV content
 function parseCSV(content, fileName) {
@@ -76,11 +76,7 @@ async function compareFiles() {
             const rowData = item.data;
             const displayRow = {};
             displayHeaders.slice(0, -1).forEach(header => {
-                if (header === 'Type') {
-                    displayRow[header] = rowData['Type'] || ''; // Assuming 'Type' column exists in CSV
-                } else {
-                    displayRow[header] = rowData[header] || '';
-                }
+                displayRow[header] = rowData[header] || '';
             });
 
             if (scannedMap.has(item.id)) {
