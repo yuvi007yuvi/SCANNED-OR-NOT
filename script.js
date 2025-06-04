@@ -8,11 +8,11 @@ let scannedQRs = [];
 function parseCSV(content, fileName) {
     const rows = content.split('\n');
     originalHeaders = rows[0].split(',').map(header => header.trim());
-    const qrCodeIdIndex = originalHeaders.findIndex(header => header.trim().toLowerCase() === 'qrcodeid');
+    const qrCodeIdIndex = originalHeaders.findIndex(header => header.trim().toLowerCase().replace(/\s+/g, '') === 'qrcodeid');
 
     console.log(`Parsing headers for ${fileName}:`, originalHeaders);
     if (qrCodeIdIndex === -1) {
-        throw new Error(`CSV file '${fileName}' must contain a "Qrcodeid" column`);
+        throw new Error(`CSV file '${fileName}' must contain a "qrcodeid" column (case-insensitive and whitespace-agnostic).`);
     }
 
     return rows.slice(1)
