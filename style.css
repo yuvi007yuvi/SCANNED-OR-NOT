@@ -1,0 +1,88 @@
+body {
+            background: linear-gradient(to right, #07546e, #2575fc); /* Gradient background */
+            color: #fff; /* White text for better contrast */
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background for content */
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+        }
+        h1 {
+            color: #343a40; /* Darker heading color */
+            font-weight: bold;
+        }
+        .upload-section {
+            background-color: #e9ecef; /* Light grey background */
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+        .form-label {
+            color: #495057; /* Dark grey for labels */
+            font-weight: bold;
+        }
+        .btn-primary {
+            background-color: #007bff; /* Bootstrap primary blue */
+            border-color: #007bff;
+            transition: all 0.3s ease; /* Smooth transition for hover effects */
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+            transform: translateY(-2px); /* Slight lift on hover */
+        }
+        .card {
+            border: none; /* Remove card borders */
+            border-radius: 10px;
+            overflow: hidden; /* Ensure content stays within rounded corners */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* More pronounced shadow for cards */
+            transition: transform 0.3s ease; /* Smooth transition for hover */
+        }
+        .card:hover {
+            transform: translateY(-5px); /* Lift card on hover */
+        }
+        .card-header {
+            background-color: #f0f0f0; /* Light background for card headers */
+            color: #343a40; /* Dark text for card headers */
+            font-weight: bold;
+            border-bottom: 1px solid #dee2e6; /* Separator line */
+        }
+        .card-body {
+            color: #343a40; /* Dark text for card body */
+        }
+        .table {
+            color: #343a40; /* Dark text for table content */
+        }
+        .table thead th {
+            background-color: #e9ecef; /* Light grey for table headers */
+            color: #495057; /* Darker text for table headers */
+            text-align: center; /* Center align table headers */
+            vertical-align: middle; /* Middle align table headers */
+            border: 1px solid #dee2e6; /* Add border to table headers */
+        }
+        .table tbody td {
+            text-align: center; /* Center align table data */
+            vertical-align: middle; /* Middle align table data */
+            border: 1px solid #dee2e6; /* Add border to table data */
+        }
+        .table {
+            border: 1px solid #dee2e6; /* Add border to the entire table */
+        }
+        .alert-danger {
+            background-color: #f8d7da; /* Light red background */
+            color: #721c24; /* Dark red text */
+            border-color: #f5c6cb; /* Red border */
+            border-radius: 8px;
+        }
+        /* Custom colors for summary cards */
+        .card.bg-primary {
+            background: linear-gradient(45deg, #007bff, #0056b3) !important; /* Blue gradient */
+        }
+        .card.bg-success {
+            background: linear-gradient(45deg, #28a745, #1e7e34) !important; /* Green gradient */
+        }
+        .card.bg-danger {
+            background: linear-gradient(45deg, #dc3545, #b02a37) !important; /* Red gradient */
+        }

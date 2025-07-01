@@ -1,0 +1,45 @@
+/* print.css */
+@media print {
+    body {
+        background: none !important;
+        color: #000 !important;
+    }
+    .container {
+        box-shadow: none !important;
+        padding: 0 !important;
+    }
+    .upload-section,
+    .zonal-report-section .row.mb-3,
+    .zonal-report-section .text-center.mb-4,
+    .zonal-report-section .card-header div,
+    #errorAlert,
+    #summarySection {
+        display: none !important;
+    }
+    .zonal-report-section {
+        margin-top: 0 !important;
+    }
+    .table thead th,
+    .table tbody td {
+        border: 1px solid #dee2e6 !important;
+        padding: 8px !important;
+    }
+    .table {
+        border-collapse: collapse !important;
+        width: 100% !important;
+    }
+    h1,
+    h2,
+    h5 {
+        color: #000 !important;
+    }
+    /* Ensure images are visible */
+    img {
+        display: block !important;
+        margin: 0 auto !important;
+    }
+    /* Ensure cards are hidden in print */
+    #zonalSummarySection {
+        display: none !important;
+    }
+}
